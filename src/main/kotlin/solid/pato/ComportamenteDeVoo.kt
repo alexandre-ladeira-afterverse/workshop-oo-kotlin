@@ -1,4 +1,4 @@
-package OrientacaoAObjetos.Interface
+package orientacaoaobjetos.Interface
 
 interface ComportamenteDeVoo {
 

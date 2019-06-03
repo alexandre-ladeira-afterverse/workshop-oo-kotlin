@@ -1,4 +1,4 @@
-package OrientacaoAObjetos.Interface
+package orientacaoaobjetos.Interface
 
 class PatoReal: Pato(VoarComAsas()) {
     override fun display() {

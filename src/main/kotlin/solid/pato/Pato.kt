@@ -1,4 +1,4 @@
-package OrientacaoAObjetos.Interface
+package orientacaoaobjetos.Interface
 
 // Head First Design Patterns: Chapter 1; The SimUDuck app
 abstract class Pato(

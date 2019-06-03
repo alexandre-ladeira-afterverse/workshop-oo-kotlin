@@ -1,4 +1,4 @@
-package EstruturasDeDados
+package estruturasdedados
 
 data class Carro (
     val cor: String,

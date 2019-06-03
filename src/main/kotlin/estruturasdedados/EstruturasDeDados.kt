@@ -1,4 +1,4 @@
-package EstruturasDeDados
+package estruturasdedados
 
 import sun.misc.Queue
 import java.util.*
@@ -13,6 +13,7 @@ import java.util.*
 fun lista(): List<String>{
     val numeros = listOf<Int>(1, 2, 3, 4, 5)
     val listaMutavel = mutableListOf<String>("Playkids App", "Leiturinha", "Explorer")
+
 
     println("Numero de elementos = ${listaMutavel.size}")
     println("Elemento na posição 1 = ${listaMutavel[1]}")
@@ -77,15 +78,18 @@ fun dicionario() {
  */
 
 fun fila(){
-    val fila = Queue<String>()
+    val fila = LinkedList<String>()
 
-    fila.enqueue("Alexandre")
-    fila.enqueue("Matheus")
-    fila.enqueue("Lucas")
+    fila.add("Alexandre")
+    fila.add("Matheus")
+    fila.add("Lucas")
 
-    val primeiroDaFila = fila.dequeue()
-
+    val primeiroDaFila = fila.peekFirst()
     println(primeiroDaFila)
+
+    println(fila.pop())
+
+    println(fila.peekFirst())
 }
 
 fun pilha(){
@@ -102,8 +106,19 @@ fun pilha(){
 
 }
 
+/**
+ * https://github.com/eugenp/tutorials/tree/master/core-kotlin/src/main/kotlin/com/baeldung/datastructures
+ * */
 fun arvore(){
-    //TODO
+    val tree = Node(10)
+    val numeros = listOf(5,12,15,3)
+    for (numero in numeros) {
+        tree.insert(numero)
+    }
+    val node = tree.find(10)!!
+
+    println("Nó com valor ${node.key} [esquerda = ${node.left?.key}, direita = ${node.right?.key}]")
+    println("Deletando nó com valor = 3")
 }
 
 fun main(){
@@ -111,6 +126,7 @@ fun main(){
     //conjunto()
     //dicionario()
     //fila()
+    arvore()
 
 
 }

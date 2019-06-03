@@ -1,4 +1,4 @@
-package OrientacaoAObjetos.Interface
+package orientacaoaobjetos.Interface
 
 class NaoVoar: ComportamenteDeVoo {
     override fun voar() {
