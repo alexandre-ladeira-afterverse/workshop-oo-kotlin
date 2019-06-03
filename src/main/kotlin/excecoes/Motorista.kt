@@ -1,6 +1,4 @@
-package Excecoes
-
-import com.sun.javaws.exceptions.InvalidArgumentException
+package excecoes
 
 class Motorista(val nome: String, val idade: Int) {
     init {

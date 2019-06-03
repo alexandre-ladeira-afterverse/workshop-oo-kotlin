@@ -1,4 +1,4 @@
-package SOLID.DIP
+package solid.DIP
 
 import com.sun.tools.corba.se.idl.InvalidArgument
 

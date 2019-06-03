@@ -1,4 +1,4 @@
-package SOLID.solucao
+package solid.solucao
 
 class CPFService {
     companion object {

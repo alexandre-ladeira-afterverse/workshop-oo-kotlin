@@ -1,4 +1,4 @@
-package SOLID.DIP
+package solid.DIP
 
 class EmailServicesImple: EmailServices {
     override fun isValid(email: String): Boolean {

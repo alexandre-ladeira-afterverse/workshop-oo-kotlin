@@ -1,4 +1,4 @@
-package orientacaoaobjetos.Interface
+package solid.pato
 
 class VoarComAsas: ComportamenteDeVoo {
     override fun voar() {

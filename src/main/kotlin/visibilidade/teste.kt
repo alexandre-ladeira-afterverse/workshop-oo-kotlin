@@ -1,4 +1,4 @@
-package Visibilidade
+package visibilidade
 
 fun main() {
    /* umaFuncao()

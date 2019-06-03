@@ -1,4 +1,4 @@
 rootProject.name = 'Workshop'
-include 'OrientacaoAObjetos'
-include 'Avancado'
+include 'orientacaoaobjetos'
+include 'avancado'
 

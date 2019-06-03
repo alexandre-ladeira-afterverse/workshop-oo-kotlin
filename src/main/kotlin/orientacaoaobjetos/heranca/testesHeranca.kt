@@ -1,5 +1,5 @@
-import OrientacaoAObjetos.Heranca.Celular
-import OrientacaoAObjetos.Heranca.Livro
+import orientacaoaobjetos.heranca.Celular
+import orientacaoaobjetos.heranca.Livro
 
 fun main() {
     val meuLivro = Livro("minha editora", 30.25, 50)

@@ -1,4 +1,4 @@
-package SOLID.DIP
+package solid.DIP
 
 interface ClienteRepository {
 

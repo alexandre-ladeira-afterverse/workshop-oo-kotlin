@@ -1,4 +1,4 @@
-package Avancado
+package avancado
 
 data class Pessoa (
     val nome: String,

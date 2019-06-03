@@ -1,4 +1,4 @@
-package OrientacaoAObjetos
+package orientacaoaobjetos
 
 fun main() {
     val joao = Colaborador(

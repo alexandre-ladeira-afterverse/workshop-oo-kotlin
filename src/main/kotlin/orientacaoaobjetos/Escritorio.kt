@@ -1,4 +1,4 @@
-package OrientacaoAObjetos
+package orientacaoaobjetos
 
 class Escritorio (
     val endereco: String,

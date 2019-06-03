@@ -1,4 +1,4 @@
-package Visibilidade
+package visibilidade
 
 private fun umaFuncao() = "Uma funcao"
 

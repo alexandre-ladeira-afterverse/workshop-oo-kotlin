@@ -1,4 +1,4 @@
-package orientacaoaobjetos.Interface
+package solid.pato
 
 class PatoDeBorracha: Pato(NaoVoar()) {
     override fun display() {

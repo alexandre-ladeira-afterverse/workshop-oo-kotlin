@@ -1,4 +1,4 @@
-package Avancado
+package avancado
 
 fun filtro() {
     val pessoas = listOf(

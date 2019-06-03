@@ -1,4 +1,4 @@
-package orientacaoaobjetos.Interface
+package solid.pato
 
 fun criarPato(opcao: Int): Pato {
     return if (opcao == 1) {

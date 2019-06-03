@@ -1,4 +1,4 @@
-package SOLID.solucao
+package solid.solucao
 
 import com.sun.tools.corba.se.idl.InvalidArgument
 

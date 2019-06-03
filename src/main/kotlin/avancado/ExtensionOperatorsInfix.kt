@@ -1,4 +1,4 @@
-package Avancado
+package avancado
 
 //https://kotlinlang.org/docs/reference/extensions.html
 fun String.removerUltimoCaracter(): String =  this.substring(0, this.length - 1)

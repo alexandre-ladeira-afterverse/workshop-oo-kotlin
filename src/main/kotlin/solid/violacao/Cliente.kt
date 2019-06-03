@@ -1,4 +1,4 @@
-package SOLID.violacao
+package solid.violacao
 
 import com.sun.tools.corba.se.idl.InvalidArgument
 

@@ -1,4 +1,4 @@
-package Avancado
+package avancado
 
 data class Copo (
     var quantidade: Int = 0

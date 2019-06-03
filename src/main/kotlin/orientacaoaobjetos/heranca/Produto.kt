@@ -1,4 +1,4 @@
-package OrientacaoAObjetos.Heranca
+package orientacaoaobjetos.heranca
 
 open class Produto(val marca: String, private var preco: Double) {
 
