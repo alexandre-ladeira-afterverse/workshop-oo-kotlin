@@ -1,4 +1,4 @@
-package solid.DIP
+package solid.dip
 
 class Cliente(
     val id: Int,

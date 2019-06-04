@@ -1,4 +1,4 @@
-package solid.DIP
+package solid.dip
 
 class ClienteRepositoryImple: ClienteRepository {
     override fun adicionarCliente(cliente: Cliente) {

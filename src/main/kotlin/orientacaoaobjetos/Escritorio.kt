@@ -3,13 +3,14 @@ package orientacaoaobjetos
 class Escritorio (
     val endereco: String,
     val recepcionista: Colaborador,
-    private val senha: Int,
-    var estaAberto: Boolean) {
+    var estaAberto: Boolean,
+    private val senha: Int
+) {
 
     constructor(
         endereco: String,
         recepcionista: Colaborador,
-        senha: Int) : this(endereco, recepcionista, senha,false)
+        senha: Int) : this(endereco, recepcionista, false, senha)
 
     fun abrir(senha: Int) {
         if (this.senha == senha && !estaAberto) {

@@ -6,7 +6,8 @@ data class Colaborador(
     val cpf: String,  // Observe que o contrutor primário já está definido
     val dataDeNascimento: String?,
     val salario: Double? = 1000.00,
-    var idade: Int?) {
+    var idade: Int?
+) {
 
     init {
         if (salario != null && salario < 998)

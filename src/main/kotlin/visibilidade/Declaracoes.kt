@@ -18,7 +18,7 @@ open class ClasseA{
 
 class ClasseB() : ClasseA() {
 
-     fun funcao() {
+     internal fun funcao() {
          //this.a
          this.b
          this.c
@@ -35,4 +35,8 @@ fun main() {
 
     val classeA = ClasseA()
     classeA.c
+
+    val classeB = ClasseB()
+
+    classeB.funcao()
 }

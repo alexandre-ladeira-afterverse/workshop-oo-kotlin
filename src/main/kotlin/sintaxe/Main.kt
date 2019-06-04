@@ -1,3 +1,5 @@
+package sintaxe
+
 fun main() {
 //    var mutavel: String = "Posso mudar"
 //    val imutavel: String = "Não posso mudar"
@@ -8,11 +10,11 @@ fun main() {
 //    mutavel = "Mudei!"
 //    println(mutavel)
 
-    //println(soma(1 + 1))
-    //comandosBasicos(100)
-    //testandoRanges()
-    //tiposNull("Alexandre")
-    tiposEnumerados()
+    //println(sintaxe.soma(1 + 1))
+    //sintaxe.comandosBasicos(100)
+    //sintaxe.testandoRanges()
+    //sintaxe.tiposNull("Alexandre")
+    //tiposEnumerados()
 }
 
 fun tiposEmKotlin(){
@@ -30,9 +32,8 @@ fun tiposEmKotlin(){
 
 }
 
-fun soma(a: Int, b: Int): Int {
-    return a + b
-}
+fun soma(a: Int, b: Int) = a + b
+
 
 fun multiplicacao(a: Int, b: Int): Int {
     return a * b
@@ -63,6 +64,10 @@ fun comandosBasicos(numero: Int){
     while (contador < 10) {
         contador++
         println(contador)
+    }
+
+    repeat(3) {
+        println("Oi 3 vzes :D")
     }
 }
 fun testandoRanges(): Unit{

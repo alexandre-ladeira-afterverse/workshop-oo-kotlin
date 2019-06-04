@@ -1,4 +1,4 @@
-package solid.solucao
+package solid.solucaosrp
 
 class EmailService {
     companion object {

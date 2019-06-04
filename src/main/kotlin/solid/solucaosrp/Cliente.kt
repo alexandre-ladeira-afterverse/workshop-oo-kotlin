@@ -1,4 +1,4 @@
-package solid.solucao
+package solid.solucaosrp
 
 
 data class Cliente(
@@ -7,7 +7,7 @@ data class Cliente(
     val email: String,
     val cpf: String) {
 
-    fun isValid():Boolean {
+    fun isValid(): Boolean {
         return EmailService.isEmailValid(email) && CPFService.isCpfValid(cpf)
     }
 

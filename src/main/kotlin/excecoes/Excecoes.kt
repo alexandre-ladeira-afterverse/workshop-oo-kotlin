@@ -1,5 +1,6 @@
 package excecoes
 
+// Mais sobre: https://kotlinlang.org/docs/reference/exceptions.html
 class MinhaException(mensagem: String): Exception(mensagem)
 
 fun minhaFuncao(a: Int) {

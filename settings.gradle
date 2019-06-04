@@ -1,4 +1,4 @@
-rootProject.name = 'Workshop'
-include 'orientacaoaobjetos'
-include 'avancado'
+rootProject.name = 'workshop-oo-kotlin'
+include 'workshop-oo-kotlin'
+include 'teste-internal'
 

@@ -2,7 +2,7 @@ package orientacaoaobjetos.exemplointerface
 
 class PorquinhoDaIndia: Animal, Roedor {
     override fun fazerBarulho() {
-       println("🔉")
+       println("Porquinho 🔉")
     }
 
     override fun comer() {

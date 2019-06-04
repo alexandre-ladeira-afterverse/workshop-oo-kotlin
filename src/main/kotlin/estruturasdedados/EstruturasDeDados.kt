@@ -107,7 +107,7 @@ fun pilha(){
 }
 
 /**
- * https://github.com/eugenp/tutorials/tree/master/core-kotlin/src/main/kotlin/com/baeldung/datastructures
+ * https://github.com/eugenp/tutorials/tree/master/core-kotlin/src/sintaxe.main/kotlin/com/baeldung/datastructures
  * */
 fun arvore(){
     val tree = Node(10)

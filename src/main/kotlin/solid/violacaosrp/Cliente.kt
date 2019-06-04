@@ -1,4 +1,4 @@
-package solid.violacao
+package solid.violacaosrp
 
 import com.sun.tools.corba.se.idl.InvalidArgument
 
@@ -21,7 +21,7 @@ class Cliente(
         * */
 
         /*
-        * Logica para enviar emai lao cliente
+        * Logica para enviar email ao cliente
         * */
 
     }
