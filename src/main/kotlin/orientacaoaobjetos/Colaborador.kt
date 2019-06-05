@@ -10,11 +10,8 @@ data class Colaborador(
 ) {
 
     init {
-        if (salario != null && salario < 998)
+        if (salario != null && salario < 998) {
             println("O salário é menor que o mínimo!")
-    }
-
-    companion object {
-        val FORMATO_DO_CPF = "000.000.000-0" // constante
+        }
     }
 }

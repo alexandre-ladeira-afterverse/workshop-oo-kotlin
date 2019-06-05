@@ -20,9 +20,9 @@ fun main() {
 
     println(joao)
     println(pedro)
-    println("Salario do joao é ${joao.salario}")
+    println("Salario do joão é ${joao.salario}")
 
-    val umEscritorio = Escritorio("Rua qualquer 00", joao, 123)
+    val umEscritorio = Escritorio("13987-550", joao, 123)
 
     umEscritorio.abrir(123)
 

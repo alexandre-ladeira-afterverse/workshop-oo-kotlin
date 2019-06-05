@@ -39,17 +39,17 @@ fun multiplicacao(a: Int, b: Int): Int {
     return a * b
 }
 
-fun comandosBasicos(numero: Int){
+fun comandosBasicos(numero: Int) {
 
     if(numero > 42) {
         println("O numero $numero é maior que 42")
     }
-    else if (numero > 42 && numero < 100){ // ||
+    else if (numero > 42 && numero < 100) { // ||
         println("O numero $numero é menor que 42 e menor que 100")
     }
 
 
-    if (numero > 42) print("👍") else print("👎")
+    if (numero > 42) print("👍Maior que 42") else print("Menor que 42👎")
 
     when (numero) {
         100 -> print("numero == 100")
@@ -71,7 +71,7 @@ fun comandosBasicos(numero: Int){
     }
 }
 fun testandoRanges(): Unit{
-    for (i in 0..10){
+    for (i in 0..10) {
         println("Primeiro for = $i")
     }
 

@@ -1,16 +1,23 @@
 package orientacaoaobjetos
 
 class Escritorio (
-    val endereco: String,
+    val cep: String,
     val recepcionista: Colaborador,
     var estaAberto: Boolean,
     private val senha: Int
 ) {
 
     constructor(
-        endereco: String,
+        cep: String,
         recepcionista: Colaborador,
-        senha: Int) : this(endereco, recepcionista, false, senha)
+        senha: Int) : this(cep, recepcionista, false, senha)
+
+    init {
+        if (!cep.matches(FORMATO_DO_CEP.toRegex())) {
+            println("CEP no formato errado!")
+        }
+
+    }
 
     fun abrir(senha: Int) {
         if (this.senha == senha && !estaAberto) {
@@ -23,7 +30,7 @@ class Escritorio (
     }
 
     fun fechar() {
-        if(estaAberto){
+        if(estaAberto) {
             println("${this.recepcionista.nome} fechou o escritório")
             this.estaAberto = false
         } else {
@@ -31,9 +38,8 @@ class Escritorio (
         }
     }
 
-
-
-
-
+    companion object {
+        val FORMATO_DO_CEP = "[0-9]{5}-[\\d]{3}" // constante
+    }
 
 }
