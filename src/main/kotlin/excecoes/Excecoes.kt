@@ -10,6 +10,10 @@ fun minhaFuncao(a: Int) {
     }
 }
 
+fun lancaExcecao(): Nothing {
+    throw Exception("Isso é uma exception!")
+}
+
 
 fun main() {
    /* try {
