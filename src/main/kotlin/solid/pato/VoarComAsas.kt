@@ -1,7 +1,7 @@
 package solid.pato
 
-class VoarComAsas: ComportamenteDeVoo {
+class VoarComAsas: ComportamentoDeVoo {
     override fun voar() {
-        println("Vooando com minhas asas")
+        println("Voando com minhas asas")
     }
 }

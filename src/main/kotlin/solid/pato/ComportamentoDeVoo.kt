@@ -1,6 +1,6 @@
 package solid.pato
 
-interface ComportamenteDeVoo {
+interface ComportamentoDeVoo {
 
     fun voar()
 }

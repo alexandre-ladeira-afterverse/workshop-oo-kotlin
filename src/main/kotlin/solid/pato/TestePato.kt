@@ -12,7 +12,7 @@ fun main() {
     pato.display()
 
     pato.performarVoo()
-    pato.comportamenteDeVoo = NaoVoar()
+    pato.comportamentoDeVoo = NaoVoar()
     pato.performarVoo()
 
     pato.nadar()

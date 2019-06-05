@@ -2,14 +2,14 @@ package solid.pato
 
 // Head First Design Patterns: Chapter 1; The SimUDuck app
 abstract class Pato(
-    var comportamenteDeVoo: ComportamenteDeVoo) {
+    var comportamentoDeVoo: ComportamentoDeVoo) {
 
     fun nadar() {
         println("Todos os patos flutuam ")
     }
 
     fun performarVoo() {
-        this.comportamenteDeVoo.voar()
+        this.comportamentoDeVoo.voar()
     }
 
     abstract fun display()

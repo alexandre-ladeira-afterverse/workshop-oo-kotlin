@@ -1,6 +1,6 @@
 package solid.pato
 
-class NaoVoar: ComportamenteDeVoo {
+class NaoVoar: ComportamentoDeVoo {
     override fun voar() {
         println("Não posso voar 😢")
     }

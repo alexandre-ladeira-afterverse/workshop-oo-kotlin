@@ -1,12 +1,10 @@
 package solid.solucaosrp
 
-import com.sun.tools.corba.se.idl.InvalidArgument
-
 class ClienteService {
 
     fun adicionarCliente(cliente: Cliente) {
         if (!cliente.isValid())
-            throw InvalidArgument("O cliente é invalido!")
+            throw IllegalArgumentException("O cliente não é válido")
 
         val repo = ClienteRepository()
         repo.adicionarCliente(cliente)

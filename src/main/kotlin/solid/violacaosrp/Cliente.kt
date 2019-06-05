@@ -1,7 +1,5 @@
 package solid.violacaosrp
 
-import com.sun.tools.corba.se.idl.InvalidArgument
-
 class Cliente(
     val id: Int,
     val nome: String,
@@ -11,10 +9,10 @@ class Cliente(
     fun AdicionarCliente(){
 
         if (!email.contains('@'))
-            throw InvalidArgument("Email Inválido")
+            throw IllegalArgumentException("Email Inválido")
 
         if (cpf.length != 11)
-            throw InvalidArgument("CPF Inválido")
+            throw IllegalArgumentException("CPF Inválido")
 
         /*
         * Logica para adicionar o cliente ao banco de dados
