@@ -1,7 +1,7 @@
 package solid.solucaosrp
 
 
-data class Cliente(
+class Cliente(
     val id: Int,
     val nome: String,
     val email: String,

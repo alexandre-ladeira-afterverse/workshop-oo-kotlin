@@ -13,7 +13,6 @@ fun lista(): List<String>{
     val numeros = listOf<Int>(1, 2, 3, 4, 5)
     val listaMutavel = mutableListOf<String>("Playkids App", "Leiturinha", "Explorer")
 
-
     println("Numero de elementos = ${listaMutavel.size}")
     println("Elemento na posição 1 = ${listaMutavel[1]}")
     println("Indice de Explorer = ${listaMutavel.indexOf("Explorer")}")
@@ -76,7 +75,7 @@ fun dicionario() {
 
     if (pessoas == pessoas2) println("São iguais")
 
-    pessoas.put("José", 20)
+    pessoas["José"] = 20
     println("${pessoas["Alexandre"]}")
 
     pessoas.put("Henrique", 20)
@@ -134,9 +133,9 @@ fun arvore(){
 
 fun main(){
     //val listaRetornada = lista() // Não podermos modificar a lista que que foi retornada
-    //conjunto()
+    conjunto()
     //dicionario()
-    fila()
+    //fila()
     //arvore()
 
 

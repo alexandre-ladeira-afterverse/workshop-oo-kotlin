@@ -17,28 +17,29 @@ fun lancaExcecao(): Nothing {
 
 fun tiposComoObjetos() {
     val tamanho = "Sou uma String".length
-    val dois = (1 as Int).inc()
+    val dois = 1
+
     println(dois)
 }
 
 
 fun main() {
-   /* try {
-        val motorista = Motorista("Joao", 17) // Essa chamada lança uma excecao
-    } catch (e: Exception) {
-        // aqui nós tratamos a excecao
-        println("O motorista não pode dirigir!")
-    }*/
-
 //    try {
-//        minhaFuncao(1)
-//    } catch (e: MinhaException) {
-//        println(e)
+//        val motorista = Motorista("Joao", 17) // Essa chamada lança uma excecao
 //    } catch (e: Exception) {
-//        println(e)
-//    } finally {
-//        println("Finalmente :D")
+//        // aqui nós tratamos a excecao
+//        println("O motorista não pode dirigir!")
 //    }
+
+    try {
+        minhaFuncao(1)
+    } catch (e: MinhaException) {
+        println(e)
+    } catch (e: Exception) {
+        println(e)
+    } finally {
+        println("Finalmente :D")
+    }
 
     tiposComoObjetos()
 
