@@ -1,4 +1,4 @@
-package excecoes
+package excecoesnothingany
 
 class Motorista(val nome: String, val idade: Int) {
     init {
