@@ -2,7 +2,7 @@ package sintaxe
 
 fun main() {
 //    var mutavel: String = "Posso mudar"
-//    val imutavel: String = "Não posso mudar"
+//    val imutavel = "Não posso mudar"
 //
 //    println(mutavel)
 //    println(imutavel)
@@ -12,9 +12,21 @@ fun main() {
 
     //println(sintaxe.soma(1 + 1))
     //sintaxe.comandosBasicos(100)
-    //sintaxe.testandoRanges()
+ //   sintaxe.testandoRanges()
     //sintaxe.tiposNull("Alexandre")
-    //tiposEnumerados()
+//    tiposEnumerados()
+
+    val numero: Int? = null
+
+    val bla = when {
+        numero == null -> "Ta zoando"
+        numero > 42 -> "Vish passou"
+        numero < 42 -> "Quase lá"
+        numero == 42 -> "Acerto mizeravi"
+        else -> "Nao chega aqui"
+    }
+
+    println("Bla é $bla")
 }
 
 fun tiposEmKotlin(){
@@ -41,13 +53,11 @@ fun multiplicacao(a: Int, b: Int): Int {
 
 fun comandosBasicos(numero: Int) {
 
-    if(numero > 42) {
+    if (numero > 42) {
         println("O numero $numero é maior que 42")
-    }
-    else if (numero > 42 && numero < 100) { // ||
+    } else if (numero in 43..99) { // ||
         println("O numero $numero é menor que 42 e menor que 100")
     }
-
 
     if (numero > 42) print("👍Maior que 42") else print("Menor que 42👎")
 
@@ -93,7 +103,7 @@ fun testandoRanges(): Unit{
 }
 
 fun tiposNull(nome: String?): String {
-    return nome ?: "O nome não foi não foi fornecido 😢"
+    return nome ?: "jnojui"
 }
 
 fun tiposEnumerados() {

@@ -16,15 +16,19 @@ fun main() {
     )
 
     joao.idade = 20
+
+    val joaoAlterado = joao.copy(dataDeNascimento = "14/02/1997")
     //joao.nome = "Outro nome" -> Não é permitido, pois o campo nome de Colaborador é imutavel
 
-    println(joao)
     println(pedro)
-    println("Salario do joão é ${joao.salario}")
+    println(joao)
+    println(joaoAlterado)
+//    println("Salario do joão é ${joao.salario}")
+//
+//    val umEscritorio = Escritorio("13987-550", joao, 123)
+//
+//    umEscritorio.abrir(123)
 
-    val umEscritorio = Escritorio("13987-550", joao, 123)
-
-    umEscritorio.abrir(123)
 
 
 }

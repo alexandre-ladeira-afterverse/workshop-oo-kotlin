@@ -4,19 +4,23 @@ private fun umaFuncao() = "Uma funcao"
 
 private class UmaClasse(val atributo: String) {
 
-    fun printaAtributo() {
+    internal fun printaAtributo() {
         println(this.atributo)
     }
 }
 
-open class ClasseA{
+open class ClasseA {
     private val a = 1
     protected val b = 2
     internal val c = 3
     val d = 4
+
+    fun minhaFuncao(){
+
+    }
 }
 
-class ClasseB() : ClasseA() {
+class ClasseB : ClasseA() {
 
      internal fun funcao() {
          //this.a
@@ -34,7 +38,6 @@ fun main() {
     classe.printaAtributo()
 
     val classeA = ClasseA()
-    classeA.c
 
     val classeB = ClasseB()
 

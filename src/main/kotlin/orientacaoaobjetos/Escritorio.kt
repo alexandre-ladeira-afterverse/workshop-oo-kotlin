@@ -13,6 +13,7 @@ class Escritorio (
         senha: Int) : this(cep, recepcionista, false, senha)
 
     init {
+
         if (!cep.matches(FORMATO_DO_CEP.toRegex())) {
             println("CEP no formato errado!")
         }
@@ -40,6 +41,9 @@ class Escritorio (
 
     companion object {
         val FORMATO_DO_CEP = "[0-9]{5}-[\\d]{3}" // constante
+
+
+
     }
 
 }

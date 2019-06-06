@@ -63,7 +63,6 @@ fun usandoLet() {
             println("${pessoa.nome} é $profissao")
         }
     }
-
 }
 
 fun main(){

@@ -7,6 +7,9 @@ open class Produto(marca: String, preco: Double) {
 
     fun oscilarPreco(oscilacao: Double) {
         this.preco += oscilacao
+
+        val (cor, preco) = Pair("amarelo", 56.00)
+
     }
 
 }

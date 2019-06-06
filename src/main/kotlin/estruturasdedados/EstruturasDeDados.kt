@@ -1,6 +1,5 @@
 package estruturasdedados
 
-import sun.misc.Queue
 import java.util.*
 
 // Mais sobre: https://kotlinlang.org/docs/reference/collections-overview.html
@@ -53,6 +52,14 @@ fun conjunto(){
     carros.remove(Carro("Azul", 2))
 
     println(carros)
+
+    val carrosIguais = setOf(
+        Carro("Preto", 2),
+        Carro("Preto", 2)
+    )
+
+
+    println(carrosIguais)
 }
 
 /** A Map stores key-value pairs (or entries); keys are unique, but different keys can be paired with equal values.
@@ -71,6 +78,10 @@ fun dicionario() {
 
     pessoas.put("José", 20)
     println("${pessoas["Alexandre"]}")
+
+    pessoas.put("Henrique", 20)
+    println(pessoas)
+
 }
 
 /**
@@ -87,9 +98,9 @@ fun fila(){
     val primeiroDaFila = fila.peekFirst()
     println(primeiroDaFila)
 
-    println(fila.pop())
+    println("Removendo o primeiro da fila: ${fila.removeFirst()}")
 
-    println(fila.peekFirst())
+    println("Novo primeiro da fila: ${fila.peekFirst()}")
 }
 
 fun pilha(){
@@ -115,18 +126,18 @@ fun arvore(){
     for (numero in numeros) {
         tree.insert(numero)
     }
-    val node = tree.find(10)!!
+    val node = tree.find(10)!! // perigo
 
     println("Nó com valor ${node.key} [esquerda = ${node.left?.key}, direita = ${node.right?.key}]")
     println("Deletando nó com valor = 3")
 }
 
 fun main(){
-    //val listaRetornada = lista() // Não podermos modificar a lisque que foi retornada
+    //val listaRetornada = lista() // Não podermos modificar a lista que que foi retornada
     //conjunto()
     //dicionario()
-    //fila()
-    arvore()
+    fila()
+    //arvore()
 
 
 }

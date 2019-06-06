@@ -1,14 +1,18 @@
 package solid.liskov
 
-fun codigoDoCliente(pato: Pato) {
-    pato.voar()
+fun codigoDoCliente(patos: List<Pato>) {
+    patos.forEach {
+        it.voar()
+    }
 }
 
 fun main() {
     val patoDeBorracha = PatoDeBorracha()
     val patoReal = PatoReal()
 
-    codigoDoCliente(patoDeBorracha)
+    val meusPatos = listOf(patoDeBorracha, patoReal)
+
+    codigoDoCliente(meusPatos)
 
 
 

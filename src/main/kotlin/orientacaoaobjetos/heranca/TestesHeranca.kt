@@ -18,5 +18,6 @@ fun main() {
 
     println(meuCelular.preco)
 
-    exemploDePolimorfismo(meuLivro)
+
+    exemploDePolimorfismo(meuCelular)
 }
