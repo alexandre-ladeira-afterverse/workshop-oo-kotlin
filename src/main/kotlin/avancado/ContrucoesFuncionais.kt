@@ -63,20 +63,12 @@ fun usandoLet() {
         }
     }
 
-
-
 }
-
-
 
 fun usandoAlso(nick: String, email: String): Usuario {
     return Usuario(nick, email).also {
         println("Usuário criado com o nick ${it.nick}")
     }
-}
-
-fun encademaento() {
-
 }
 
 data class Usuario(val nick: String, val email: String)
@@ -88,7 +80,7 @@ fun usandoAssociate() {
         Usuario( "drica", "dridri@gmail.com")
     )
 
-    val mapeadosBy = usuarios.associateBy { it.nick  }
+    val mapeadosBy = usuarios.associateBy { it.nick }
     val mapeados = usuarios.associate { it.nick to it.email }
 
     println(mapeadosBy)
@@ -123,14 +115,18 @@ fun usandoGroupBy() {
 fun encadeamento() {
     val cores = listOf("azul", "preto", "verde", "amarelo", "vermelho", "roxo")
 
-    val coresFiltradas = cores.filter { it.startsWith("a") }
+    val coresFiltradas = cores
+        .filter { it.startsWith("a") }
         .sortedBy { it }
         .map { it.toUpperCase() }
-        .forEach{ println("Cor: $it")}
+        .also { println("Quantidade de cores: ${it.size}") }
+        //.forEach{ println("Cor: $it")}
+
+    println(coresFiltradas)
 }
 
 fun main(){
-    //filtro()
+    filtro()
     //iteracaoComForEach()
     //usandoMap()
     //usandoFold()
@@ -139,6 +135,6 @@ fun main(){
     //usandoAssociate()
     //usandoGroupBy()
     //println(usandoAlso("Alexandre", "alexandre.ladeira@playkids.com"))
-    encadeamento()
+    //encadeamento()
 
 }

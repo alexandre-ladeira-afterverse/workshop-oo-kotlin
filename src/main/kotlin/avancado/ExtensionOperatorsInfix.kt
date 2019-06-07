@@ -14,19 +14,15 @@ operator fun Pessoa.plus(outra: Pessoa) = Pessoa(
 
 fun main() {
     val nome = "Alexandre"
-
     println(nome.removerUltimoCaracter())
 
     val ale = Pessoa("Alexandre", 18, "Programador")
-
     println(ale.ehMaiordeIdade())
 
     val joao = Pessoa("João", 20)
-
     println(ale + joao)
 
     val umCopo = Copo(200)
-
     umCopo add 100
 
     println(umCopo)
